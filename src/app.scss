@@ -1,0 +1,55 @@
+// @import "colors";
+// @import "variable";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.icon{
+  font-size: 25px;
+  vertical-align: middle;
+  line-height: 60px;
+}
+
+header{
+  width: 100%;
+  height: 120px;
+  border-bottom: 2px solid gray;
+  & > .up{
+    width: 98%;
+    height: 60px;
+    margin: 0 auto;
+    & > .left{
+      width: 20%;
+      height: 60px;
+      float: left;
+    }
+    & > .right{
+      width: 4%;
+      height: 60px;
+      float: right;
+   }
+  }
+  & > .down{
+    width: 98%;
+    height: 60px;
+    margin: 0 auto;
+    & > ul{
+      list-style: none;
+      height: 60px;
+      line-height: 60px;
+      & > li{
+        display: inline-block;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.container{
+  height: calc(100% - 120px);
+  overflow-y:auto;
+}

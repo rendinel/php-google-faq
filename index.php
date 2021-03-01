@@ -47,11 +47,40 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="dist/app.css">
   </head>
   <body>
-    <?php foreach($faqs as $item) { ?>
-      <h2> <?php echo $item["question"] ?> </h2>
-      <p> <?php echo $item["answer"] ?> </p>
-    <?php } ?>
+    <header>
+      <div class="up">
+        <div class="left">
+          <span class="logo icon">GOOGLE</span>
+          <span class="privacy icon">Privacy e termini</span>
+        </div>
+        <div class="right">
+            <i class="fas fa-bars icon"></i>
+            <i class="fas fa-user-circle icon"></i>
+        </div>
+      </div>
+      <div class="down">
+        <ul>
+          <li>Introduzione</li>
+          <li>Norme sulla privacy</li>
+          <li>Termini di servizio</li>
+          <li>Tecnologie</li>
+          <li>Domande frequenti</li>
+        </ul>
+
+      </div>
+
+    </header>
+    <div class="container">
+      <?php foreach($faqs as $item) { ?>
+        <h2> <?php echo $item["question"] ?> </h2>
+        <p> <?php echo $item["answer"] ?> </p>
+      <?php } ?>
+    </div>
   </body>
 </html>
